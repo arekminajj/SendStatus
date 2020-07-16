@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Update status";
+}
+
+    <form asp-controller="Status" asp-action="Update">
+        <div class="form-group">
+            <label for="formGroupExampleInput">First line</label>
+            <input type="text" class="form-control" name="lineOne" placeholder="First line">
+            <label for="formGroupExampleInput2"> Second line</label>
+            <input type="text" class="form-control" name="lineTwo" placeholder="Second line">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Update" />
+    </form>
+

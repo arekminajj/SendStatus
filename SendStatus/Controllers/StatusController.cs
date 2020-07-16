@@ -17,8 +17,17 @@ namespace SendStatus.Controllers
 
         public IActionResult Index(string lineOne, string lineTwo)
         {
+            return View();
+        }
+
+        public IActionResult Update(string lineOne, string lineTwo)
+        {
             _service.SendUpdate(lineOne, lineTwo);
 
+            return RedirectToAction("ThankYou", "Status");
+        }
+        public IActionResult ThankYou()
+        {
             return View();
         }
     }
